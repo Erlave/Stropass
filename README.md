@@ -27,8 +27,8 @@ Make sure you have the following installed:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR-USERNAME/stropass.git
-cd stropass
+git clone https://github.com/Erlave/Stropass.git
+cd Stropass
 ```
 
 ### 2. Create virtual environment (optional but recommended)
