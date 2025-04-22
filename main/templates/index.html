@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>stropass</title>
+  <link rel="stylesheet" href="{%static 'style.css'%}" />
+</head>
+<body>
+  <header>
+    <div class="left-eader">
+        <div class="logo">stropass</div>
+        <p class="slogan">A gateway to passwords, a nightmare for hackers.</p>
+    </div>
+    <nav>
+      <a class="about" href="about">about us</a>
+      <div class="lang-select">USA (english)</div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Random Password Generator</h1>
+    <p class="subtext">Create strong and secure passwords to keep your account safe online.</p>
+    
+    <div class="password-box">
+      <input id="result" type="text"  readonly />
+      <button id="copy-btn" class="copy-btn">copy</button>
+      <span id="copy-massage" style="display:none;" class="copy-msg">Copied!</span>
+      <button id="clear" class="refresh-btn" oneclik="location.reload()"><img src = "{%static 'images/8685233_ic_fluent_arrow_counterclockwise_filled_icon.png'%}" alt = "logo" class = "refresh-logo"></button>
+    </div>
+
+    <div class="controls">
+      <label for="length">Password length: <span id="length-value" class="length-value">16</span></label>
+      <div class="slider-wrap">
+        <button id="min" class="minus">➖</button>
+        <input type="range" id="length" min="4" max="32" value="16" />
+        <button id="plus" class="plus">➕</button>
+      </div>
+
+      <div class="char-types">
+        <label><input type="checkbox" id="symbols" name="chars" /> @$%</label>
+        <label><input type="checkbox" id="numbers" name="chars" /> 123</label>
+        <label><input type="checkbox" id="lowercase" name="chars" /> abc</label>
+        <label><input type="checkbox" id="uppercase" name="chars" /> ABC</label>
+      </div>
+
+      <button id="generate" class="generate-btn">Generat</button>
+    </div>
+  </main>
+
+  <footer>
+    <div class = "left-footer">
+        <div class="logo">stropass</div>
+        <p class="slogan">Developed by Erlave.</p>
+    </div>
+    <div class="socials">
+      <a href= "https://github.com/Erlave" target ="_blank"><img src= "{%static 'images/211904_social_github_icon.png'%}" alt="GitHub" /></a>
+      <a href="https://t.me/erlavebeat" target ="_blank"><img src= "{%static 'images/5340247_chat_media_network_social_telegram_icon.png'%}" alt="Telegram" /></a>
+      <a href="https://www.instagram.com/erlave.code/" target ="_blank"><img src= "{%static 'images/1161953_instagram_icon.png'%}" alt="Instagram" /></a>
+    </div>
+  </footer>
+  <script src="{%static 'js/script.js'%}"></script>  
+</body>
+</html>
