@@ -90,7 +90,7 @@ This project is open-source and free to use.
 ---
 
 ## 🙌 Author
-Made with 💙 by **YOUR NAME**
+Made with 💙 by **erlave **
 
-GitHub: [@YOUR-USERNAME](https://github.com/Erlave)
+GitHub: (https://github.com/Erlave)
 
